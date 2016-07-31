@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #4A4A4A; }
+
+.calendarWrap {
+  width: 420px;
+  margin: 0 auto; }
+  .calendarWrap .header {
+    height: 50px;
+    background-color: #424242;
+    position: relative; }
+    .calendarWrap .header .arrow {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      border-style: solid;
+      cursor: pointer; }
+      .calendarWrap .header .arrow.left {
+        border-width: 7.5px 10px 7.5px 0;
+        border-color: transparent #a09fa0 transparent transparent;
+        left: 20px; }
+      .calendarWrap .header .arrow.right {
+        border-width: 7.5px 0 7.5px 10px;
+        border-color: transparent transparent transparent #a09fa0;
+        right: 20px; }
+    .calendarWrap .header .title {
+      font-size: 20px;
+      line-height: 50px;
+      font-weight: 100;
+      text-align: center;
+      color: white; }
+  .calendarWrap .calendar .week .day {
+    display: inline-block;
+    width: 60px;
+    margin-right: -4px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer; }
+    .calendarWrap .calendar .week .day .string {
+      font-size: 9px;
+      line-height: 9px;
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 100;
+      text-align: center;
+      margin-bottom: 5px; }
+    .calendarWrap .calendar .week .day .int {
+      font-size: 26px;
+      line-height: 26px;
+      color: white;
+      font-weight: 100;
+      text-align: center; }
+    .calendarWrap .calendar .week .day .todos {
+      text-align: center; }
+      .calendarWrap .calendar .week .day .todos .todo {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        vertical-align: top; }
+        .calendarWrap .calendar .week .day .todos .todo.yellow {
+          background-color: yellow; }
+        .calendarWrap .calendar .week .day .todos .todo.red {
+          background-color: red; }
+        .calendarWrap .calendar .week .day .todos .todo.green {
+          background-color: green; }
+
+/*# sourceMappingURL=main.css.map */
